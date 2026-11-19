@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerenciador de Jogos de Videogame</title>
+    <link rel="stylesheet" href="css/estilo.css">
+</head>
+<body>
+    <header>
+        <h1>Gerenciador de Jogos de Videogame</h1>
+    </header>
+
+    <main>
+        <h2 id="tituloPagina">Incluir novo jogo</h2>
+
+        <div id="mensagem" class="mensagem oculto"></div>
+
+        <form id="formJogo" novalidate>
+            <div class="campo" id="campo-titulo">
+                <label for="titulo">Título</label>
+                <input type="text" id="titulo" name="titulo">
+                <div class="erro-campo" id="erro-titulo"></div>
+            </div>
+
+            <div class="campo" id="campo-observacoes">
+                <label for="observacoes">Observações</label>
+                <textarea id="observacoes" name="observacoes"></textarea>
+                <div class="erro-campo" id="erro-observacoes"></div>
+            </div>
+
+            <div class="campo" id="campo-anoLancamento">
+                <label for="anoLancamento">Ano de lançamento</label>
+                <input type="number" id="anoLancamento" name="anoLancamento">
+                <div class="erro-campo" id="erro-anoLancamento"></div>
+            </div>
+
+            <div class="campo" id="campo-plataforma">
+                <label for="plataforma">Plataforma</label>
+                <input type="text" id="plataforma" name="plataforma">
+                <div class="erro-campo" id="erro-plataforma"></div>
+            </div>
+
+            <div class="campo" id="campo-disponivel">
+                <span class="rotulo">Disponível</span>
+                <div class="opcoes">
+                    <label><input type="radio" name="disponivel" value="true"> Sim</label>
+                    <label><input type="radio" name="disponivel" value="false"> Não</label>
+                </div>
+                <div class="erro-campo" id="erro-disponivel"></div>
+            </div>
+
+            <div class="formulario-acoes">
+                <button type="submit" class="sucesso">Salvar</button>
+                <a class="botao neutro" href="index.html">Voltar</a>
+            </div>
+        </form>
+    </main>
+
+    <script src="js/rodape.js"></script>
+    <script src="js/form.js"></script>
+</body>
+</html>

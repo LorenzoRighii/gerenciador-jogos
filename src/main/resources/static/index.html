@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerenciador de Jogos de Videogame</title>
+    <link rel="stylesheet" href="css/estilo.css">
+</head>
+<body>
+    <header>
+        <h1>Gerenciador de Jogos de Videogame</h1>
+    </header>
+
+    <main>
+        <div id="mensagem" class="mensagem oculto"></div>
+
+        <div id="lista"></div>
+
+        <div class="barra-topo">
+            <a class="botao sucesso" href="form.html">Incluir novo jogo</a>
+        </div>
+    </main>
+
+    <dialog id="dialogoExclusao">
+        <p id="textoExclusao"></p>
+        <div class="acoes">
+            <button type="button" class="neutro" id="btnNao">Não</button>
+            <button type="button" class="perigo" id="btnSim">Sim</button>
+        </div>
+    </dialog>
+
+    <script src="js/rodape.js"></script>
+    <script src="js/index.js"></script>
+</body>
+</html>
